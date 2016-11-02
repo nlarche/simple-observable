@@ -7,9 +7,9 @@ Simple Observable implementation from [André Staltz](https://github.com/staltz)
 Just to learn.
 
 
-# An Observable suscribe to an observer
+## An Observable suscribe to an observer
 
-# An observer is an object with 3 functions (callback)
+## An observer is an object with 3 functions (callback)
 
 ```javascript
 const observer = {
@@ -19,9 +19,9 @@ const observer = {
 }
 ```
 
-# An observable is an object with at least a function call subscribe
+## An observable is an object with at least a function call subscribe
 
-## subscribe means give me some data
+### subscribe means give me some data
 
 ```javascript
 export default function createObservable(subscribe) {
@@ -31,7 +31,7 @@ export default function createObservable(subscribe) {
 }
 ```
 
-## it's easy to create an Observable from An array
+### it's easy to create an Observable from An array
 
 ```javascript
 const arrayObservable = createObservable(function subscribe(observer) {
@@ -40,7 +40,7 @@ const arrayObservable = createObservable(function subscribe(observer) {
 });
 ```
 
-## it's easy to create an Observable from An events
+### it's easy to create an Observable from An events
 
 ```javascript
 const clickObservable = createObservable(function subscribe(observer) {
@@ -48,7 +48,7 @@ const clickObservable = createObservable(function subscribe(observer) {
 });
 ```
 
-## Finally you can susbscribe to your observer
+### Finally you can susbscribe to your observer
 
 ```javascript
 arrayObservable  
