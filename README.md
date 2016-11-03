@@ -19,7 +19,7 @@ const observer = {
 }
 ```
 
-## An observable is an object with at least a function call subscribe
+## An observable is an object with at least a function 'subscribe'
 
 ### subscribe means give me some data
 
@@ -31,7 +31,7 @@ export default function createObservable(subscribe) {
 }
 ```
 
-### it's easy to create an Observable from An array
+### Create an Observable from an array
 
 ```javascript
 const arrayObservable = createObservable(function subscribe(observer) {
@@ -40,7 +40,7 @@ const arrayObservable = createObservable(function subscribe(observer) {
 });
 ```
 
-### it's easy to create an Observable from An events
+### Create an Observable from an event
 
 ```javascript
 const clickObservable = createObservable(function subscribe(observer) {
